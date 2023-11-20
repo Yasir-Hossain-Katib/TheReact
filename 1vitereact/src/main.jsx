@@ -10,9 +10,34 @@ function MyApp(){
   )
 }
 
+// const reactElement =  {
+//   type: "a",
+//   props:{
+//       href:"https://google.com",
+//       target:"_blank"
+//   },
+//   children:"click me to visit google"
+// }
+
+const anotherElement= (
+  <a href="https://google.com"        target="_blank">Visit Google</a>
+)
+
+
+anotherUser="bingo"
+
+
+
+const reactElement=React.createElement(
+  "a",
+  {href:"https://google.com",target:"_blank"},
+  "click me to visit google",
+ 
+  
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   
-    <MyApp />
+    MyApp()
   
 )
